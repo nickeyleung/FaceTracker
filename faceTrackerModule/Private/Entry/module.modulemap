@@ -1,0 +1,8 @@
+// module.modulemap 文件
+module MyObjcFramework {
+    // headers.h 和 module.modulemap  必须在同一group下，否则需要配置 `header "/??/headers.h"`
+    //header "headers.h"
+    header "FaceTrackerManager.h"
+
+    export *
+}

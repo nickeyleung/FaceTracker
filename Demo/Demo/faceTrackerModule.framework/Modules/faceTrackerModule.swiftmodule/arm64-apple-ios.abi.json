@@ -1,0 +1,994 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "faceTrackerModule",
+    "printedName": "faceTrackerModule",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyObjcFramework",
+        "printedName": "MyObjcFramework",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceTrackerConfigurator",
+        "printedName": "FaceTrackerConfigurator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FaceTrackerProtocol",
+                "printedName": "any faceTrackerModule.FaceTrackerProtocol",
+                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17faceTrackerModule04FaceB12ConfiguratorC06detectD07requestyAA0dB8Protocol_p_tFZ",
+            "mangledName": "$s17faceTrackerModule04FaceB12ConfiguratorC06detectD07requestyAA0dB8Protocol_p_tFZ",
+            "moduleName": "faceTrackerModule",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceTrackerConfigurator",
+                "printedName": "faceTrackerModule.FaceTrackerConfigurator",
+                "usr": "c:@M@faceTrackerModule@objc(cs)FaceTrackerConfigurator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@faceTrackerModule@objc(cs)FaceTrackerConfigurator(im)init",
+            "mangledName": "$s17faceTrackerModule04FaceB12ConfiguratorCACycfc",
+            "moduleName": "faceTrackerModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@faceTrackerModule@objc(cs)FaceTrackerConfigurator",
+        "mangledName": "$s17faceTrackerModule04FaceB12ConfiguratorC",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceTrackerProtocol",
+        "printedName": "FaceTrackerProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "displayLayer",
+            "printedName": "displayLayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuartzCore.CAEAGLLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CAEAGLLayer",
+                    "printedName": "QuartzCore.CAEAGLLayer",
+                    "usr": "c:objc(cs)CAEAGLLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(py)displayLayer",
+            "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvp",
+            "moduleName": "faceTrackerModule",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuartzCore.CAEAGLLayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CAEAGLLayer",
+                        "printedName": "QuartzCore.CAEAGLLayer",
+                        "usr": "c:objc(cs)CAEAGLLayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(im)displayLayer",
+                "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvg",
+                "moduleName": "faceTrackerModule",
+                "genericSig": "<τ_0_0 where τ_0_0 : faceTrackerModule.FaceTrackerProtocol>",
+                "sugared_genericSig": "<Self where Self : faceTrackerModule.FaceTrackerProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effectImage",
+            "printedName": "effectImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(py)effectImage",
+            "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageSo7UIImageCvp",
+            "moduleName": "faceTrackerModule",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(im)effectImage",
+                "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageSo7UIImageCvg",
+                "moduleName": "faceTrackerModule",
+                "genericSig": "<τ_0_0 where τ_0_0 : faceTrackerModule.FaceTrackerProtocol>",
+                "sugared_genericSig": "<Self where Self : faceTrackerModule.FaceTrackerProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol",
+        "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP",
+        "moduleName": "faceTrackerModule",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CaptureLogic",
+        "printedName": "CaptureLogic",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(pl)CaptureLogic(im)captureOutput:didOutput:from:",
+            "mangledName": "$s17faceTrackerModule12CaptureLogicP13captureOutput_03didG04fromySo09AVCaptureG0C_So17CMSampleBufferRefaSo0J10ConnectionCtF",
+            "moduleName": "faceTrackerModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : faceTrackerModule.CaptureLogic>",
+            "sugared_genericSig": "<Self where Self : faceTrackerModule.CaptureLogic>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@faceTrackerModule@objc(pl)CaptureLogic",
+        "mangledName": "$s17faceTrackerModule12CaptureLogicP",
+        "moduleName": "faceTrackerModule",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CaptureManager",
+        "printedName": "CaptureManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:formatType:displayView:orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureManager",
+                "printedName": "faceTrackerModule.CaptureManager",
+                "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureLogic",
+                "printedName": "any faceTrackerModule.CaptureLogic",
+                "usr": "c:@M@faceTrackerModule@objc(pl)CaptureLogic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoOrientation",
+                "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@AVCaptureVideoOrientation"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager(im)initWithDelegate:formatType:displayView:orientation:",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC8delegate10formatType11displayView11orientationAcA0D5Logic_p_s6UInt32VSo6UIViewCSgSo25AVCaptureVideoOrientationVtcfc",
+            "moduleName": "faceTrackerModule",
+            "objc_name": "initWithDelegate:formatType:displayView:orientation:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startCapture",
+            "printedName": "startCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager(im)startCapture",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC05startD0yyF",
+            "moduleName": "faceTrackerModule",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopCapture",
+            "printedName": "stopCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager(im)stopCapture",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC04stopD0yyF",
+            "moduleName": "faceTrackerModule",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCameraPosition",
+            "printedName": "getCameraPosition()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Position",
+                "printedName": "AVFoundation.AVCaptureDevice.Position",
+                "usr": "c:@E@AVCaptureDevicePosition"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager(im)getCameraPosition",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC17getCameraPositionSo015AVCaptureDeviceH0VyF",
+            "moduleName": "faceTrackerModule",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createSamples",
+            "printedName": "createSamples(context:imageBuffer:complete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenGLES.EAGLContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EAGLContext",
+                    "printedName": "OpenGLES.EAGLContext",
+                    "usr": "c:objc(cs)EAGLContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreVideo.CVBuffer, CoreVideo.CVBuffer) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(CoreVideo.CVBuffer, CoreVideo.CVBuffer)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager(im)createSamplesWithContext:imageBuffer:complete:",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC13createSamples7context11imageBuffer8completeySo11EAGLContextCSg_So11CVBufferRefayAL_ALtctF",
+            "moduleName": "faceTrackerModule",
+            "objc_name": "createSamplesWithContext:imageBuffer:complete:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@faceTrackerModule@objc(cs)CaptureManager(im)captureOutput:didOutputSampleBuffer:fromConnection:",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC13captureOutput_03didG04fromySo09AVCaptureG0C_So17CMSampleBufferRefaSo0J10ConnectionCtF",
+            "moduleName": "faceTrackerModule",
+            "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didDrop:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@faceTrackerModule@objc(cs)CaptureManager(im)captureOutput:didDropSampleBuffer:fromConnection:",
+            "mangledName": "$s17faceTrackerModule14CaptureManagerC13captureOutput_7didDrop4fromySo09AVCaptureG0C_So17CMSampleBufferRefaSo0K10ConnectionCtF",
+            "moduleName": "faceTrackerModule",
+            "objc_name": "captureOutput:didDropSampleBuffer:fromConnection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@faceTrackerModule@objc(cs)CaptureManager",
+        "mangledName": "$s17faceTrackerModule14CaptureManagerC",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MLKitFaceDetection",
+        "printedName": "MLKitFaceDetection",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "Import",
+        "name": "MLKitVision",
+        "printedName": "MLKitVision",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "Import",
+        "name": "MLKitCommon",
+        "printedName": "MLKitCommon",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceDetecteManager",
+        "printedName": "FaceDetecteManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(sampleBuffer:cameraPosition:complete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Position",
+                "printedName": "AVFoundation.AVCaptureDevice.Position",
+                "usr": "c:@E@AVCaptureDevicePosition"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([MLKitFaceDetection.Face]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MLKitFaceDetection.Face]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Face",
+                        "printedName": "MLKitFaceDetection.Face",
+                        "usr": "c:objc(cs)MLKFace"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@faceTrackerModule@objc(cs)FaceDetecteManager(cm)detectFaceWithSampleBuffer:cameraPosition:complete:",
+            "mangledName": "$s17faceTrackerModule18FaceDetecteManagerC06detectD012sampleBuffer14cameraPosition8completeySo08CMSampleI3Refa_So015AVCaptureDeviceK0VySaySo7MLKFaceCGctFZ",
+            "moduleName": "faceTrackerModule",
+            "static": true,
+            "objc_name": "detectFaceWithSampleBuffer:cameraPosition:complete:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceDetecteManager",
+                "printedName": "faceTrackerModule.FaceDetecteManager",
+                "usr": "c:@M@faceTrackerModule@objc(cs)FaceDetecteManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@faceTrackerModule@objc(cs)FaceDetecteManager(im)init",
+            "mangledName": "$s17faceTrackerModule18FaceDetecteManagerCACycfc",
+            "moduleName": "faceTrackerModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@faceTrackerModule@objc(cs)FaceDetecteManager",
+        "mangledName": "$s17faceTrackerModule18FaceDetecteManagerC",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

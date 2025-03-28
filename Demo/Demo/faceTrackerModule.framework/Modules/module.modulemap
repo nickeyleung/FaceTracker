@@ -1,0 +1,6 @@
+framework module faceTrackerModule {
+  umbrella header "faceTrackerModule.h"
+  export *
+
+  module * { export * }
+}

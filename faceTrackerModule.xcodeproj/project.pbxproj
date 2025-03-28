@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6F01E52D905B5F006E824E /* faceTrackerModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01E42D905B5F006E824E /* faceTrackerModule.docc */; };
+		3D6F01EB2D905B5F006E824E /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */; };
+		3D6F01F02D905B5F006E824E /* faceTrackerModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01EF2D905B5F006E824E /* faceTrackerModuleTests.swift */; };
+		3D6F01F12D905B5F006E824E /* faceTrackerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F01E32D905B5F006E824E /* faceTrackerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D6F02002D906085006E824E /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FC2D906085006E824E /* CaptureManager.swift */; };
+		3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */; };
+		3D6F02022D906085006E824E /* CaptureManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */; };
+		3D6F02052D906196006E824E /* item_stickerrabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02042D906196006E824E /* item_stickerrabit.png */; };
+		3D6F021C2D906200006E824E /* CCGLTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02072D906200006E824E /* CCGLTexture.cpp */; };
+		3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02082D906200006E824E /* CCGLTexture.h */; };
+		3D6F021E2D906200006E824E /* CCImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02092D906200006E824E /* CCImage.cpp */; };
+		3D6F021F2D906200006E824E /* CCImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F020A2D906200006E824E /* CCImage.h */; };
+		3D6F02232D906200006E824E /* GLScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F020E2D906200006E824E /* GLScene.cpp */; };
+		3D6F02242D906200006E824E /* GLScene.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F020F2D906200006E824E /* GLScene.hpp */; };
+		3D6F02252D906200006E824E /* GLSticker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02102D906200006E824E /* GLSticker.cpp */; };
+		3D6F02262D906200006E824E /* GLSticker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02112D906200006E824E /* GLSticker.hpp */; };
+		3D6F02272D906200006E824E /* GLYUV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02122D906200006E824E /* GLYUV.cpp */; };
+		3D6F02282D906200006E824E /* GLYUV.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02132D906200006E824E /* GLYUV.hpp */; };
+		3D6F022A2D906200006E824E /* Normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02152D906200006E824E /* Normal.fsh */; };
+		3D6F022B2D906200006E824E /* sticker.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02162D906200006E824E /* sticker.fsh */; };
+		3D6F022C2D906200006E824E /* sticker.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02172D906200006E824E /* sticker.vsh */; };
+		3D6F022D2D906200006E824E /* YUV.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02182D906200006E824E /* YUV.fsh */; };
+		3D6F022E2D906200006E824E /* YUV.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02192D906200006E824E /* YUV.vsh */; };
+		3D7316552D91A9B8008AD838 /* FaceTrackerBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D7316542D91A9B8008AD838 /* FaceTrackerBridge.mm */; };
+		3D7316562D91A9B8008AD838 /* FaceTrackerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */; };
+		3D73165B2D91AF4A008AD838 /* FaceDetectBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7316582D91AF49008AD838 /* FaceDetectBridge.m */; };
+		3D73165C2D91AF4A008AD838 /* FaceDetectBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7316592D91AF4A008AD838 /* FaceDetectBridge.h */; };
+		3D73165D2D91AF4A008AD838 /* FaceDetecteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */; };
+		3DA4FFD22D969A2D003764AD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4FFD12D969A2D003764AD /* libc++.tbd */; };
+		3DB606AC2D915C3900DD99A1 /* FaceTrackerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB606AB2D915C3900DD99A1 /* FaceTrackerProtocol.swift */; };
+		3DB606AE2D915CD800DD99A1 /* FaceTrackerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB606AD2D915CD800DD99A1 /* FaceTrackerConfigurator.swift */; };
+		3DB606B22D91603000DD99A1 /* FaceTrackerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB606B12D91603000DD99A1 /* FaceTrackerManager.m */; };
+		3DB606B32D91603000DD99A1 /* FaceTrackerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB606B02D91603000DD99A1 /* FaceTrackerManager.h */; };
+		3DCCA51B2D94529D003252DE /* Pods_faceTrackerModule.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07F53E546306F2D9AFB191CE /* Pods_faceTrackerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1758896D963217951678B7A /* Pods_faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F53E546306F2D9AFB191CE /* Pods_faceTrackerModule.framework */; };
+		F30233492679D1F02CBBF387 /* Pods_faceTrackerModule_faceTrackerModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D23F7F528DBA402B38CA4E /* Pods_faceTrackerModule_faceTrackerModuleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D6F01EC2D905B5F006E824E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D6F01D72D905B5E006E824E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D6F01DF2D905B5E006E824E;
+			remoteInfo = faceTrackerModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DCCA51A2D945293003252DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DCCA51B2D94529D003252DE /* Pods_faceTrackerModule.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07F53E546306F2D9AFB191CE /* Pods_faceTrackerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceTrackerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D23F7F528DBA402B38CA4E /* Pods_faceTrackerModule_faceTrackerModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceTrackerModule_faceTrackerModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EB276D476827EFF4D40A3A /* Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = faceTrackerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F01E32D905B5F006E824E /* faceTrackerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = faceTrackerModule.h; sourceTree = "<group>"; };
+		3D6F01E42D905B5F006E824E /* faceTrackerModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = faceTrackerModule.docc; sourceTree = "<group>"; };
+		3D6F01EA2D905B5F006E824E /* faceTrackerModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faceTrackerModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F01EF2D905B5F006E824E /* faceTrackerModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faceTrackerModuleTests.swift; sourceTree = "<group>"; };
+		3D6F01FC2D906085006E824E /* CaptureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
+		3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManagerBridge.h; sourceTree = "<group>"; };
+		3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManagerBridge.m; sourceTree = "<group>"; };
+		3D6F02042D906196006E824E /* item_stickerrabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_stickerrabit.png; sourceTree = "<group>"; };
+		3D6F02072D906200006E824E /* CCGLTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCGLTexture.cpp; sourceTree = "<group>"; };
+		3D6F02082D906200006E824E /* CCGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLTexture.h; sourceTree = "<group>"; };
+		3D6F02092D906200006E824E /* CCImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCImage.cpp; sourceTree = "<group>"; };
+		3D6F020A2D906200006E824E /* CCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCImage.h; sourceTree = "<group>"; };
+		3D6F020E2D906200006E824E /* GLScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLScene.cpp; sourceTree = "<group>"; };
+		3D6F020F2D906200006E824E /* GLScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLScene.hpp; sourceTree = "<group>"; };
+		3D6F02102D906200006E824E /* GLSticker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLSticker.cpp; sourceTree = "<group>"; };
+		3D6F02112D906200006E824E /* GLSticker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLSticker.hpp; sourceTree = "<group>"; };
+		3D6F02122D906200006E824E /* GLYUV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLYUV.cpp; sourceTree = "<group>"; };
+		3D6F02132D906200006E824E /* GLYUV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLYUV.hpp; sourceTree = "<group>"; };
+		3D6F02152D906200006E824E /* Normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.fsh; sourceTree = "<group>"; };
+		3D6F02162D906200006E824E /* sticker.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sticker.fsh; sourceTree = "<group>"; };
+		3D6F02172D906200006E824E /* sticker.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sticker.vsh; sourceTree = "<group>"; };
+		3D6F02182D906200006E824E /* YUV.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUV.fsh; sourceTree = "<group>"; };
+		3D6F02192D906200006E824E /* YUV.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUV.vsh; sourceTree = "<group>"; };
+		3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceTrackerBridge.h; sourceTree = "<group>"; };
+		3D7316542D91A9B8008AD838 /* FaceTrackerBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceTrackerBridge.mm; sourceTree = "<group>"; };
+		3D7316582D91AF49008AD838 /* FaceDetectBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectBridge.m; sourceTree = "<group>"; };
+		3D7316592D91AF4A008AD838 /* FaceDetectBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectBridge.h; sourceTree = "<group>"; };
+		3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetecteManager.swift; sourceTree = "<group>"; };
+		3D7316602D91BB1A008AD838 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D7316612D91BE65008AD838 /* headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.h; sourceTree = "<group>"; };
+		3DA4FFD12D969A2D003764AD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		3DB606AB2D915C3900DD99A1 /* FaceTrackerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackerProtocol.swift; sourceTree = "<group>"; };
+		3DB606AD2D915CD800DD99A1 /* FaceTrackerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackerConfigurator.swift; sourceTree = "<group>"; };
+		3DB606B02D91603000DD99A1 /* FaceTrackerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceTrackerManager.h; sourceTree = "<group>"; };
+		3DB606B12D91603000DD99A1 /* FaceTrackerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceTrackerManager.m; sourceTree = "<group>"; };
+		ACF3D2ADBA91E278C0CA0E9F /* Pods-faceTrackerModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceTrackerModule.release.xcconfig"; path = "Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule.release.xcconfig"; sourceTree = "<group>"; };
+		B502EF27E53791CF0EE4C7B0 /* Pods-faceTrackerModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceTrackerModule.debug.xcconfig"; path = "Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule.debug.xcconfig"; sourceTree = "<group>"; };
+		CE7EB647663A54FA35EE6068 /* Pods-faceTrackerModule-faceTrackerModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceTrackerModule-faceTrackerModuleTests.release.xcconfig"; path = "Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6F01DD2D905B5E006E824E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA4FFD22D969A2D003764AD /* libc++.tbd in Frameworks */,
+				D1758896D963217951678B7A /* Pods_faceTrackerModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6F01E72D905B5F006E824E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6F01EB2D905B5F006E824E /* faceTrackerModule.framework in Frameworks */,
+				F30233492679D1F02CBBF387 /* Pods_faceTrackerModule_faceTrackerModuleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6F01D62D905B5E006E824E = {
+			isa = PBXGroup;
+			children = (
+				3D6F01E22D905B5F006E824E /* faceTrackerModule */,
+				3D6F01EE2D905B5F006E824E /* faceTrackerModuleTests */,
+				3D6F01E12D905B5F006E824E /* Products */,
+				3DBDDCB7C2909D12E8A05796 /* Pods */,
+				6523E1FD6CE04E14C9FA83ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6F01E12D905B5F006E824E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */,
+				3D6F01EA2D905B5F006E824E /* faceTrackerModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6F01E22D905B5F006E824E /* faceTrackerModule */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F01FB2D90602E006E824E /* Public */,
+				3D6F01FA2D906022006E824E /* Private */,
+				3D6F01E32D905B5F006E824E /* faceTrackerModule.h */,
+				3D6F01E42D905B5F006E824E /* faceTrackerModule.docc */,
+			);
+			path = faceTrackerModule;
+			sourceTree = "<group>";
+		};
+		3D6F01EE2D905B5F006E824E /* faceTrackerModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F01EF2D905B5F006E824E /* faceTrackerModuleTests.swift */,
+			);
+			path = faceTrackerModuleTests;
+			sourceTree = "<group>";
+		};
+		3D6F01FA2D906022006E824E /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				3D7316572D91AF37008AD838 /* MLK */,
+				3DB606AF2D91601A00DD99A1 /* Entry */,
+				3D6F021A2D906200006E824E /* OpenGL */,
+				3D6F02032D906189006E824E /* Resource */,
+				3D6F01FF2D906085006E824E /* Capture */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		3D6F01FB2D90602E006E824E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3DB606AB2D915C3900DD99A1 /* FaceTrackerProtocol.swift */,
+				3DB606AD2D915CD800DD99A1 /* FaceTrackerConfigurator.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		3D6F01FF2D906085006E824E /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F01FC2D906085006E824E /* CaptureManager.swift */,
+				3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */,
+				3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		3D6F02032D906189006E824E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F02042D906196006E824E /* item_stickerrabit.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D6F021A2D906200006E824E /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F02072D906200006E824E /* CCGLTexture.cpp */,
+				3D6F02082D906200006E824E /* CCGLTexture.h */,
+				3D6F02092D906200006E824E /* CCImage.cpp */,
+				3D6F020A2D906200006E824E /* CCImage.h */,
+				3D6F020E2D906200006E824E /* GLScene.cpp */,
+				3D6F020F2D906200006E824E /* GLScene.hpp */,
+				3D6F02102D906200006E824E /* GLSticker.cpp */,
+				3D6F02112D906200006E824E /* GLSticker.hpp */,
+				3D6F02122D906200006E824E /* GLYUV.cpp */,
+				3D6F02132D906200006E824E /* GLYUV.hpp */,
+				3D6F02152D906200006E824E /* Normal.fsh */,
+				3D6F02162D906200006E824E /* sticker.fsh */,
+				3D6F02172D906200006E824E /* sticker.vsh */,
+				3D6F02182D906200006E824E /* YUV.fsh */,
+				3D6F02192D906200006E824E /* YUV.vsh */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		3D7316572D91AF37008AD838 /* MLK */ = {
+			isa = PBXGroup;
+			children = (
+				3D7316592D91AF4A008AD838 /* FaceDetectBridge.h */,
+				3D7316582D91AF49008AD838 /* FaceDetectBridge.m */,
+				3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */,
+			);
+			path = MLK;
+			sourceTree = "<group>";
+		};
+		3DB606AF2D91601A00DD99A1 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				3D7316602D91BB1A008AD838 /* module.modulemap */,
+				3D7316612D91BE65008AD838 /* headers.h */,
+				3DB606B02D91603000DD99A1 /* FaceTrackerManager.h */,
+				3DB606B12D91603000DD99A1 /* FaceTrackerManager.m */,
+				3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */,
+				3D7316542D91A9B8008AD838 /* FaceTrackerBridge.mm */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		3DBDDCB7C2909D12E8A05796 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B502EF27E53791CF0EE4C7B0 /* Pods-faceTrackerModule.debug.xcconfig */,
+				ACF3D2ADBA91E278C0CA0E9F /* Pods-faceTrackerModule.release.xcconfig */,
+				25EB276D476827EFF4D40A3A /* Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig */,
+				CE7EB647663A54FA35EE6068 /* Pods-faceTrackerModule-faceTrackerModuleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6523E1FD6CE04E14C9FA83ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4FFD12D969A2D003764AD /* libc++.tbd */,
+				07F53E546306F2D9AFB191CE /* Pods_faceTrackerModule.framework */,
+				18D23F7F528DBA402B38CA4E /* Pods_faceTrackerModule_faceTrackerModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D6F01DB2D905B5E006E824E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB606B32D91603000DD99A1 /* FaceTrackerManager.h in Headers */,
+				3D73165C2D91AF4A008AD838 /* FaceDetectBridge.h in Headers */,
+				3D6F021F2D906200006E824E /* CCImage.h in Headers */,
+				3D6F02262D906200006E824E /* GLSticker.hpp in Headers */,
+				3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */,
+				3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */,
+				3D7316562D91A9B8008AD838 /* FaceTrackerBridge.h in Headers */,
+				3D6F02282D906200006E824E /* GLYUV.hpp in Headers */,
+				3D6F01F12D905B5F006E824E /* faceTrackerModule.h in Headers */,
+				3D6F02242D906200006E824E /* GLScene.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D6F01DF2D905B5E006E824E /* faceTrackerModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6F01F42D905B5F006E824E /* Build configuration list for PBXNativeTarget "faceTrackerModule" */;
+			buildPhases = (
+				5353F5A276FAAC3D1E65E7A4 /* [CP] Check Pods Manifest.lock */,
+				3D6F01DB2D905B5E006E824E /* Headers */,
+				3D6F01DC2D905B5E006E824E /* Sources */,
+				3D6F01DD2D905B5E006E824E /* Frameworks */,
+				3D6F01DE2D905B5E006E824E /* Resources */,
+				032843C425B32D15497E7054 /* [CP] Copy Pods Resources */,
+				3DCCA51A2D945293003252DE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = faceTrackerModule;
+			productName = faceTrackerModule;
+			productReference = 3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D6F01E92D905B5F006E824E /* faceTrackerModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6F01F72D905B5F006E824E /* Build configuration list for PBXNativeTarget "faceTrackerModuleTests" */;
+			buildPhases = (
+				1953D7B2C7D796DD734B19D6 /* [CP] Check Pods Manifest.lock */,
+				3D6F01E62D905B5F006E824E /* Sources */,
+				3D6F01E72D905B5F006E824E /* Frameworks */,
+				3D6F01E82D905B5F006E824E /* Resources */,
+				6D79EC5A92794E8C26BB88D5 /* [CP] Embed Pods Frameworks */,
+				995E270DC002EED4BD48B0E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6F01ED2D905B5F006E824E /* PBXTargetDependency */,
+			);
+			name = faceTrackerModuleTests;
+			productName = faceTrackerModuleTests;
+			productReference = 3D6F01EA2D905B5F006E824E /* faceTrackerModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6F01D72D905B5E006E824E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3D6F01DF2D905B5E006E824E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3D6F01E92D905B5F006E824E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 3D6F01DA2D905B5E006E824E /* Build configuration list for PBXProject "faceTrackerModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D6F01D62D905B5E006E824E;
+			productRefGroup = 3D6F01E12D905B5F006E824E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6F01DF2D905B5E006E824E /* faceTrackerModule */,
+				3D6F01E92D905B5F006E824E /* faceTrackerModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6F01DE2D905B5E006E824E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6F022D2D906200006E824E /* YUV.fsh in Resources */,
+				3D6F022A2D906200006E824E /* Normal.fsh in Resources */,
+				3D6F02052D906196006E824E /* item_stickerrabit.png in Resources */,
+				3D6F022C2D906200006E824E /* sticker.vsh in Resources */,
+				3D6F022E2D906200006E824E /* YUV.vsh in Resources */,
+				3D6F022B2D906200006E824E /* sticker.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6F01E82D905B5F006E824E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032843C425B32D15497E7054 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1953D7B2C7D796DD734B19D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faceTrackerModule-faceTrackerModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5353F5A276FAAC3D1E65E7A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faceTrackerModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D79EC5A92794E8C26BB88D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		995E270DC002EED4BD48B0E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6F01DC2D905B5E006E824E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB606AE2D915CD800DD99A1 /* FaceTrackerConfigurator.swift in Sources */,
+				3D73165B2D91AF4A008AD838 /* FaceDetectBridge.m in Sources */,
+				3DB606AC2D915C3900DD99A1 /* FaceTrackerProtocol.swift in Sources */,
+				3D7316552D91A9B8008AD838 /* FaceTrackerBridge.mm in Sources */,
+				3D6F02252D906200006E824E /* GLSticker.cpp in Sources */,
+				3DB606B22D91603000DD99A1 /* FaceTrackerManager.m in Sources */,
+				3D6F02022D906085006E824E /* CaptureManagerBridge.m in Sources */,
+				3D6F02002D906085006E824E /* CaptureManager.swift in Sources */,
+				3D6F021E2D906200006E824E /* CCImage.cpp in Sources */,
+				3D6F021C2D906200006E824E /* CCGLTexture.cpp in Sources */,
+				3D6F02232D906200006E824E /* GLScene.cpp in Sources */,
+				3D73165D2D91AF4A008AD838 /* FaceDetecteManager.swift in Sources */,
+				3D6F02272D906200006E824E /* GLYUV.cpp in Sources */,
+				3D6F01E52D905B5F006E824E /* faceTrackerModule.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6F01E62D905B5F006E824E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6F01F02D905B5F006E824E /* faceTrackerModuleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D6F01ED2D905B5F006E824E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D6F01DF2D905B5E006E824E /* faceTrackerModule */;
+			targetProxy = 3D6F01EC2D905B5F006E824E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D6F01F22D905B5F006E824E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D6F01F32D905B5F006E824E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D6F01F52D905B5F006E824E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B502EF27E53791CF0EE4C7B0 /* Pods-faceTrackerModule.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QQ72FD5666;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMLKit\"",
+					"$(inherited)",
+					"${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources",
+					"$(PROJECT_DIR)/faceTrackerModule/Private/3rdparty/libstbImage/include",
+					"$(PROJECT_DIR)/faceTrackerModule/Private/3rdparty/libglm/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework.lwq;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/faceTrackerModule/Private/Entry/";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6F01F62D905B5F006E824E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF3D2ADBA91E278C0CA0E9F /* Pods-faceTrackerModule.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QQ72FD5666;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMLKit\"",
+					"$(inherited)",
+					"${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources",
+					"$(PROJECT_DIR)/faceTrackerModule/Private/3rdparty/libstbImage/include",
+					"$(PROJECT_DIR)/faceTrackerModule/Private/3rdparty/libglm/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework.lwq;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/faceTrackerModule/Private/Entry/";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D6F01F82D905B5F006E824E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EB276D476827EFF4D40A3A /* Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abs.faceTrackerModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6F01F92D905B5F006E824E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE7EB647663A54FA35EE6068 /* Pods-faceTrackerModule-faceTrackerModuleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abs.faceTrackerModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6F01DA2D905B5E006E824E /* Build configuration list for PBXProject "faceTrackerModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6F01F22D905B5F006E824E /* Debug */,
+				3D6F01F32D905B5F006E824E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6F01F42D905B5F006E824E /* Build configuration list for PBXNativeTarget "faceTrackerModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6F01F52D905B5F006E824E /* Debug */,
+				3D6F01F62D905B5F006E824E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6F01F72D905B5F006E824E /* Build configuration list for PBXNativeTarget "faceTrackerModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6F01F82D905B5F006E824E /* Debug */,
+				3D6F01F92D905B5F006E824E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6F01D72D905B5E006E824E /* Project object */;
+}

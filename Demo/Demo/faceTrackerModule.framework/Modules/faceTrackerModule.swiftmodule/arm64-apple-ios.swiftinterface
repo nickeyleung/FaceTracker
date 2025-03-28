@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name faceTrackerModule
+import AVFoundation
+import CoreMedia
+import MLKitCommon
+import MLKitFaceDetection
+import MLKitVision
+import MyObjcFramework
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import faceTrackerModule
+@objc @_inheritsConvenienceInitializers public class FaceTrackerConfigurator : ObjectiveC.NSObject {
+  public class func detectFace(request: any faceTrackerModule.FaceTrackerProtocol)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol FaceTrackerProtocol {
+  @objc var displayLayer: QuartzCore.CAEAGLLayer? { get }
+  @objc var effectImage: UIKit.UIImage { get }
+}
+@objc public protocol CaptureLogic {
+  @objc func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CaptureManager : ObjectiveC.NSObject {
+  @objc public init(delegate: any faceTrackerModule.CaptureLogic, formatType: Darwin.OSType, displayView: UIKit.UIView?, orientation: AVFoundation.AVCaptureVideoOrientation = .portrait)
+  @objc public func startCapture()
+  @objc public func stopCapture()
+  @objc public func getCameraPosition() -> AVFoundation.AVCaptureDevice.Position
+  @objc public func createSamples(context: OpenGLES.EAGLContext?, imageBuffer: CoreVideo.CVPixelBuffer, complete: @escaping (CoreVideo.CVOpenGLESTexture, CoreVideo.CVOpenGLESTexture) -> Swift.Void)
+  @objc deinit
+}
+extension faceTrackerModule.CaptureManager : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@_inheritsConvenienceInitializers @objc public class FaceDetecteManager : ObjectiveC.NSObject {
+  @objc public static func detectFace(sampleBuffer: CoreMedia.CMSampleBuffer, cameraPosition: AVFoundation.AVCaptureDevice.Position, complete: @escaping ([MLKitFaceDetection.Face]) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
