@@ -7,6 +7,7 @@
 
 //#import "faceTrackerModule-Swift.h"
 #import "AVFoundation/AVFoundation.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(id)shared;
 
-
+- (void)updateStickerImagePath:(NSString *)path;
 -(void)detectFace:(CAEAGLLayer *)displayLayer;
 @end
 

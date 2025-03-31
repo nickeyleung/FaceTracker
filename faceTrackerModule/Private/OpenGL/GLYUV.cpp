@@ -28,7 +28,7 @@ void GLYUV:: setupPath(std::string path) {
     createRenderBuffer();
     createFrameBuffer();
     loadShader();
-    loadVertex();
+    
 }
 
 void GLYUV:: clearBuffer() {
@@ -326,6 +326,7 @@ void GLYUV:: display(CVOpenGLESTextureRef sampleY, CVOpenGLESTextureRef sampleUV
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glUseProgram(program);
+    loadVertex();
 
     glActiveTexture(GL_TEXTURE0);
     GLuint yName = CVOpenGLESTextureGetName(sampleY);

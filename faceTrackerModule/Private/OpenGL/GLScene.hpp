@@ -24,7 +24,7 @@ public:
     void display(uint8_t *y, uint8_t *u, uint8_t *v, int width, int height, int viewPortW, int viewPortH);
     void display(CVOpenGLESTextureRef sampleY, CVOpenGLESTextureRef sampleUV, int width, int height);
     void display(CVOpenGLESTextureCacheRef cache, CVImageBufferRef imageBuffer, int width, int height);
-    void updateSticker(float x, float y, int width, int height);
+    void updateSticker(float x, float y, float width, float height, float rotateX, float rotateY, float rotateZ);
     GLuint getProgramID();
 private:
     

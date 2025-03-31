@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string>
 
-#include <OpenGLES/ES3/gl.h>
+#include <OpenGLES/ES2/gl.h>
 #include <CoreVideo/CoreVideo.h>
 
 class GLYUV {

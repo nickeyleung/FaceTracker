@@ -14,7 +14,6 @@
 		3D6F02002D906085006E824E /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FC2D906085006E824E /* CaptureManager.swift */; };
 		3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */; };
 		3D6F02022D906085006E824E /* CaptureManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */; };
-		3D6F02052D906196006E824E /* item_stickerrabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02042D906196006E824E /* item_stickerrabit.png */; };
 		3D6F021C2D906200006E824E /* CCGLTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02072D906200006E824E /* CCGLTexture.cpp */; };
 		3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02082D906200006E824E /* CCGLTexture.h */; };
 		3D6F021E2D906200006E824E /* CCImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02092D906200006E824E /* CCImage.cpp */; };
@@ -25,16 +24,12 @@
 		3D6F02262D906200006E824E /* GLSticker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02112D906200006E824E /* GLSticker.hpp */; };
 		3D6F02272D906200006E824E /* GLYUV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02122D906200006E824E /* GLYUV.cpp */; };
 		3D6F02282D906200006E824E /* GLYUV.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02132D906200006E824E /* GLYUV.hpp */; };
-		3D6F022A2D906200006E824E /* Normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02152D906200006E824E /* Normal.fsh */; };
-		3D6F022B2D906200006E824E /* sticker.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02162D906200006E824E /* sticker.fsh */; };
-		3D6F022C2D906200006E824E /* sticker.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02172D906200006E824E /* sticker.vsh */; };
-		3D6F022D2D906200006E824E /* YUV.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02182D906200006E824E /* YUV.fsh */; };
-		3D6F022E2D906200006E824E /* YUV.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F02192D906200006E824E /* YUV.vsh */; };
 		3D7316552D91A9B8008AD838 /* FaceTrackerBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D7316542D91A9B8008AD838 /* FaceTrackerBridge.mm */; };
 		3D7316562D91A9B8008AD838 /* FaceTrackerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */; };
 		3D73165B2D91AF4A008AD838 /* FaceDetectBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7316582D91AF49008AD838 /* FaceDetectBridge.m */; };
 		3D73165C2D91AF4A008AD838 /* FaceDetectBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7316592D91AF4A008AD838 /* FaceDetectBridge.h */; };
 		3D73165D2D91AF4A008AD838 /* FaceDetecteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */; };
+		3DA2D42C2D999A4D00C8A2E7 /* Shaders.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DA2D42B2D999A4D00C8A2E7 /* Shaders.bundle */; };
 		3DA4FFD22D969A2D003764AD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4FFD12D969A2D003764AD /* libc++.tbd */; };
 		3DB606AC2D915C3900DD99A1 /* FaceTrackerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB606AB2D915C3900DD99A1 /* FaceTrackerProtocol.swift */; };
 		3DB606AE2D915CD800DD99A1 /* FaceTrackerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB606AD2D915CD800DD99A1 /* FaceTrackerConfigurator.swift */; };
@@ -58,7 +53,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		3DCCA51A2D945293003252DE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -80,7 +75,6 @@
 		3D6F01FC2D906085006E824E /* CaptureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
 		3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManagerBridge.h; sourceTree = "<group>"; };
 		3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManagerBridge.m; sourceTree = "<group>"; };
-		3D6F02042D906196006E824E /* item_stickerrabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_stickerrabit.png; sourceTree = "<group>"; };
 		3D6F02072D906200006E824E /* CCGLTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCGLTexture.cpp; sourceTree = "<group>"; };
 		3D6F02082D906200006E824E /* CCGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLTexture.h; sourceTree = "<group>"; };
 		3D6F02092D906200006E824E /* CCImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCImage.cpp; sourceTree = "<group>"; };
@@ -91,11 +85,6 @@
 		3D6F02112D906200006E824E /* GLSticker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLSticker.hpp; sourceTree = "<group>"; };
 		3D6F02122D906200006E824E /* GLYUV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLYUV.cpp; sourceTree = "<group>"; };
 		3D6F02132D906200006E824E /* GLYUV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLYUV.hpp; sourceTree = "<group>"; };
-		3D6F02152D906200006E824E /* Normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.fsh; sourceTree = "<group>"; };
-		3D6F02162D906200006E824E /* sticker.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sticker.fsh; sourceTree = "<group>"; };
-		3D6F02172D906200006E824E /* sticker.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sticker.vsh; sourceTree = "<group>"; };
-		3D6F02182D906200006E824E /* YUV.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUV.fsh; sourceTree = "<group>"; };
-		3D6F02192D906200006E824E /* YUV.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUV.vsh; sourceTree = "<group>"; };
 		3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceTrackerBridge.h; sourceTree = "<group>"; };
 		3D7316542D91A9B8008AD838 /* FaceTrackerBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceTrackerBridge.mm; sourceTree = "<group>"; };
 		3D7316582D91AF49008AD838 /* FaceDetectBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectBridge.m; sourceTree = "<group>"; };
@@ -103,6 +92,7 @@
 		3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetecteManager.swift; sourceTree = "<group>"; };
 		3D7316602D91BB1A008AD838 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		3D7316612D91BE65008AD838 /* headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.h; sourceTree = "<group>"; };
+		3DA2D42B2D999A4D00C8A2E7 /* Shaders.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Shaders.bundle; sourceTree = "<group>"; };
 		3DA4FFD12D969A2D003764AD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		3DB606AB2D915C3900DD99A1 /* FaceTrackerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackerProtocol.swift; sourceTree = "<group>"; };
 		3DB606AD2D915CD800DD99A1 /* FaceTrackerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackerConfigurator.swift; sourceTree = "<group>"; };
@@ -177,10 +167,10 @@
 		3D6F01FA2D906022006E824E /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				3DA2D4282D99993800C8A2E7 /* Resources */,
 				3D7316572D91AF37008AD838 /* MLK */,
 				3DB606AF2D91601A00DD99A1 /* Entry */,
 				3D6F021A2D906200006E824E /* OpenGL */,
-				3D6F02032D906189006E824E /* Resource */,
 				3D6F01FF2D906085006E824E /* Capture */,
 			);
 			path = Private;
@@ -205,14 +195,6 @@
 			path = Capture;
 			sourceTree = "<group>";
 		};
-		3D6F02032D906189006E824E /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				3D6F02042D906196006E824E /* item_stickerrabit.png */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		3D6F021A2D906200006E824E /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,11 +208,6 @@
 				3D6F02112D906200006E824E /* GLSticker.hpp */,
 				3D6F02122D906200006E824E /* GLYUV.cpp */,
 				3D6F02132D906200006E824E /* GLYUV.hpp */,
-				3D6F02152D906200006E824E /* Normal.fsh */,
-				3D6F02162D906200006E824E /* sticker.fsh */,
-				3D6F02172D906200006E824E /* sticker.vsh */,
-				3D6F02182D906200006E824E /* YUV.fsh */,
-				3D6F02192D906200006E824E /* YUV.vsh */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -243,6 +220,14 @@
 				3D73165A2D91AF4A008AD838 /* FaceDetecteManager.swift */,
 			);
 			path = MLK;
+			sourceTree = "<group>";
+		};
+		3DA2D4282D99993800C8A2E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DA2D42B2D999A4D00C8A2E7 /* Shaders.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3DB606AF2D91601A00DD99A1 /* Entry */ = {
@@ -286,10 +271,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB606B32D91603000DD99A1 /* FaceTrackerManager.h in Headers */,
 				3D73165C2D91AF4A008AD838 /* FaceDetectBridge.h in Headers */,
 				3D6F021F2D906200006E824E /* CCImage.h in Headers */,
 				3D6F02262D906200006E824E /* GLSticker.hpp in Headers */,
+				3DB606B32D91603000DD99A1 /* FaceTrackerManager.h in Headers */,
 				3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */,
 				3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */,
 				3D7316562D91A9B8008AD838 /* FaceTrackerBridge.h in Headers */,
@@ -386,12 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6F022D2D906200006E824E /* YUV.fsh in Resources */,
-				3D6F022A2D906200006E824E /* Normal.fsh in Resources */,
-				3D6F02052D906196006E824E /* item_stickerrabit.png in Resources */,
-				3D6F022C2D906200006E824E /* sticker.vsh in Resources */,
-				3D6F022E2D906200006E824E /* YUV.vsh in Resources */,
-				3D6F022B2D906200006E824E /* sticker.fsh in Resources */,
+				3DA2D42C2D999A4D00C8A2E7 /* Shaders.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +387,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		032843C425B32D15497E7054 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -417,7 +397,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceTrackerModule/Pods-faceTrackerModule-resources.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -677,12 +657,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QQ72FD5666;
+				DEVELOPMENT_TEAM = EVU3ERD5BB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/Demo",
+					"$(PROJECT_DIR)/Demo/Pods/MLImage/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitCommon/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitFaceDetection/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitVision/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLImage/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitCommon/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitFaceDetection/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitVision/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,7 +702,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework.lwq;
+				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -731,12 +723,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QQ72FD5666;
+				DEVELOPMENT_TEAM = EVU3ERD5BB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/Demo",
+					"$(PROJECT_DIR)/Demo/Pods/MLImage/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitCommon/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitFaceDetection/Frameworks",
+					"$(PROJECT_DIR)/Demo/Pods/MLKitVision/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLImage/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitCommon/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitFaceDetection/Frameworks",
+					"$(PROJECT_DIR)/Pods/MLKitVision/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -764,7 +768,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework.lwq;
+				PRODUCT_BUNDLE_IDENTIFIER = abs.com.faceTrackerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

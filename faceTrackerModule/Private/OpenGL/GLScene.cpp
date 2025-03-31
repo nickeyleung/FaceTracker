@@ -49,8 +49,8 @@ void GLScene:: display(CVOpenGLESTextureCacheRef cache, CVImageBufferRef imageBu
     yuv.display(cache, imageBuffer, width, height);
 }
 
-void GLScene:: updateSticker(float x, float y, int width, int height) {
-    sticker.display(width, height);
+void GLScene:: updateSticker(float x, float y, float width, float height, float rotateX, float rotateY, float rotateZ) {
+    sticker.display(x, y, width, height, rotateX, rotateY, rotateZ);
 }
 
 GLuint GLScene:: getProgramID() {

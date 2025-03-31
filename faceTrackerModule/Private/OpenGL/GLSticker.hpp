@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string>
 
-#include <OpenGLES/ES3/gl.h>
+#include <OpenGLES/ES2/gl.h>
 #include <CoreVideo/CoreVideo.h>
 
 class GLSticker {
@@ -20,7 +20,7 @@ public:
     ~GLSticker();
     
     void setupPath(std:: string path);
-    void display(int width, int height);
+    void display(float centerX, float centerY, float width, float height, float rotateX, float rotateY, float rotateZ);
     
     GLuint getProgramID();
     

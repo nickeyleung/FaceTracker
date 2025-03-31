@@ -3,6 +3,7 @@
 //
 
 #include "CCGLTexture.h"
+#include "iostream"
 
 CCGLTexture::CCGLTexture()
 {
@@ -28,7 +29,7 @@ GLuint  CCGLTexture::generateTexture(const std::string &pathString, const char* 
 
     //printf("CCGLTexture Load Image file: %s \n", pathString.c_str());
     
-    std::string imagePath =pathString + "/" + std::string(fileName);
+    std::string imagePath = pathString;
 
     CCImage* glImage = new CCImage();
     glImage->ReadFromFile((unsigned char*)imagePath.c_str());

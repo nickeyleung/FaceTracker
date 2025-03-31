@@ -21,7 +21,7 @@ import AVFoundation
     var delegate: CaptureLogic?
     private var output: AVCaptureOutput?
     
-    @objc public   init(delegate: CaptureLogic, formatType: OSType, displayView: UIView?, orientation: AVCaptureVideoOrientation = .portrait) {
+    @objc public init(delegate: CaptureLogic, formatType: OSType, displayView: UIView?, orientation: AVCaptureVideoOrientation = .portrait) {
         super.init()
         self.delegate = delegate
         setup(type: .video, formatType: formatType, displayView: displayView, orientation: orientation)
@@ -82,6 +82,7 @@ import AVFoundation
                     output.alwaysDiscardsLateVideoFrames = true
                     let connection = output.connection(with: .video)
                     connection?.videoOrientation = orientation
+                    connection?.isVideoMirrored = true
                 }
             }
             

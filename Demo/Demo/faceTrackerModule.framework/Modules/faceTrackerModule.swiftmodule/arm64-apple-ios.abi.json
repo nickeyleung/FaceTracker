@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "faceTrackerModule",
-    "printedName": "faceTrackerModule",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -40,7 +40,7 @@
                 "kind": "TypeNominal",
                 "name": "FaceTrackerProtocol",
                 "printedName": "any faceTrackerModule.FaceTrackerProtocol",
-                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol"
+                "usr": "s:17faceTrackerModule04FaceB8ProtocolP"
               }
             ],
             "declKind": "Func",
@@ -94,20 +94,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -171,6 +157,114 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ImagePath",
+        "printedName": "ImagePath",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rabbitSample",
+            "printedName": "rabbitSample",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(faceTrackerModule.ImagePath.Type) -> faceTrackerModule.ImagePath",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImagePath",
+                    "printedName": "faceTrackerModule.ImagePath",
+                    "usr": "s:17faceTrackerModule9ImagePathO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "faceTrackerModule.ImagePath.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImagePath",
+                        "printedName": "faceTrackerModule.ImagePath",
+                        "usr": "s:17faceTrackerModule9ImagePathO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17faceTrackerModule9ImagePathO12rabbitSampleyA2CmF",
+            "mangledName": "$s17faceTrackerModule9ImagePathO12rabbitSampleyA2CmF",
+            "moduleName": "faceTrackerModule"
+          },
+          {
+            "kind": "Var",
+            "name": "imagePath",
+            "printedName": "imagePath",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(faceTrackerModule.ImagePath.Type) -> (Swift.String) -> faceTrackerModule.ImagePath",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> faceTrackerModule.ImagePath",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImagePath",
+                        "printedName": "faceTrackerModule.ImagePath",
+                        "usr": "s:17faceTrackerModule9ImagePathO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(path: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "faceTrackerModule.ImagePath.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImagePath",
+                        "printedName": "faceTrackerModule.ImagePath",
+                        "usr": "s:17faceTrackerModule9ImagePathO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17faceTrackerModule9ImagePathO05imageE0yACSS_tcACmF",
+            "mangledName": "$s17faceTrackerModule9ImagePathO05imageE0yACSS_tcACmF",
+            "moduleName": "faceTrackerModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17faceTrackerModule9ImagePathO",
+        "mangledName": "$s17faceTrackerModule9ImagePathO",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FaceTrackerProtocol",
         "printedName": "FaceTrackerProtocol",
         "children": [
@@ -195,13 +289,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(py)displayLayer",
+            "usr": "s:17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvp",
             "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvp",
             "moduleName": "faceTrackerModule",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -224,15 +315,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(im)displayLayer",
+                "usr": "s:17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvg",
                 "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP12displayLayerSo11CAEAGLLayerCSgvg",
                 "moduleName": "faceTrackerModule",
                 "genericSig": "<τ_0_0 where τ_0_0 : faceTrackerModule.FaceTrackerProtocol>",
                 "sugared_genericSig": "<Self where Self : faceTrackerModule.FaceTrackerProtocol>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -245,19 +333,16 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
+                "name": "ImagePath",
+                "printedName": "faceTrackerModule.ImagePath",
+                "usr": "s:17faceTrackerModule9ImagePathO"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(py)effectImage",
-            "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageSo7UIImageCvp",
+            "usr": "s:17faceTrackerModule04FaceB8ProtocolP11effectImageAA0G4PathOvp",
+            "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageAA0G4PathOvp",
             "moduleName": "faceTrackerModule",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -266,21 +351,18 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
+                    "name": "ImagePath",
+                    "printedName": "faceTrackerModule.ImagePath",
+                    "usr": "s:17faceTrackerModule9ImagePathO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol(im)effectImage",
-                "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageSo7UIImageCvg",
+                "usr": "s:17faceTrackerModule04FaceB8ProtocolP11effectImageAA0G4PathOvg",
+                "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP11effectImageAA0G4PathOvg",
                 "moduleName": "faceTrackerModule",
                 "genericSig": "<τ_0_0 where τ_0_0 : faceTrackerModule.FaceTrackerProtocol>",
                 "sugared_genericSig": "<Self where Self : faceTrackerModule.FaceTrackerProtocol>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -288,30 +370,11 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@faceTrackerModule@objc(pl)FaceTrackerProtocol",
+        "usr": "s:17faceTrackerModule04FaceB8ProtocolP",
         "mangledName": "$s17faceTrackerModule04FaceB8ProtocolP",
         "moduleName": "faceTrackerModule",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
+          "AccessControl"
         ]
       },
       {
@@ -388,22 +451,6 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -706,20 +753,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -922,20 +955,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",

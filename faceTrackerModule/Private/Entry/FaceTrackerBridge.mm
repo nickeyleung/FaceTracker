@@ -7,6 +7,7 @@
 
 #import "FaceTrackerBridge.h"
 #import "GLScene.hpp"
+#import <UIKit/UIKit.h>
 
 @interface FaceTrackerBridge()
 @property (nonatomic, assign) GLScene *scene;
@@ -20,34 +21,34 @@ static id shared = nil;
     
     if (shared == nil) {
         shared = [[super alloc] init];
-        [shared config];
     }
     
     return shared;
 }
 
--(void)config {
+- (void)config2:(NSString *)imagePath {
     
     self.scene = new GLScene();
     
-    NSString *pathV = [[NSBundle mainBundle] pathForResource:@"YUV" ofType:@"vsh"];
+    NSString *path = [[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Frameworks"] stringByAppendingPathComponent:@"faceTrackerModule.framework"] stringByAppendingPathComponent:@"Shaders.bundle"];
+
+    NSString *pathV = [path stringByAppendingPathComponent:@"YUV.vsh"];
     NSString *vsh = [[NSString alloc] initWithContentsOfFile:pathV encoding:NSUTF8StringEncoding error:nil];
         
-    NSString *pathf= [[NSBundle mainBundle] pathForResource:@"Normal" ofType:@"fsh"];
+    NSString *pathf= [path stringByAppendingPathComponent:@"Normal.fsh"];
     NSString *fsh = [[NSString alloc] initWithContentsOfFile:pathf encoding:NSUTF8StringEncoding error:nil];
     
-    NSString *stickerPathV = [[NSBundle mainBundle] pathForResource:@"sticker" ofType:@"vsh"];
+    NSString *stickerPathV = [path stringByAppendingPathComponent:@"sticker.vsh"];
     NSString *stickerVsh = [[NSString alloc] initWithContentsOfFile:stickerPathV encoding:NSUTF8StringEncoding error:nil];
         
-    NSString *stickerPathf= [[NSBundle mainBundle] pathForResource:@"sticker" ofType:@"fsh"];
+    NSString *stickerPathf= [path stringByAppendingPathComponent:@"sticker.fsh"];
     NSString *stickerFsh = [[NSString alloc] initWithContentsOfFile:stickerPathf encoding:NSUTF8StringEncoding error:nil];
     
-    NSString *path = [[NSBundle mainBundle] resourcePath];
-    self.scene->setBundlePath([path UTF8String], [vsh UTF8String], [fsh UTF8String],[stickerVsh UTF8String], [stickerFsh UTF8String]);
+    self.scene->setBundlePath([imagePath UTF8String], [vsh UTF8String], [fsh UTF8String],[stickerVsh UTF8String], [stickerFsh UTF8String]);
 }
 
-- (void)updateSticker:(float)centerX centerY:(float)centerY width:(int)width height:(int)height {
-    self.scene->updateSticker(centerX, centerY, width, height);
+- (void)updateSticker:(float)centerX centerY:(float)centerY width:(float)width height:(float)height rotateX:(float)rotateX rotateY:(float)rotateY rotateZ:(float)rotateZ {
+    self.scene->updateSticker(centerX, centerY, width, height, rotateX, rotateY, rotateZ);
 }
 
 - (void)display:(CVOpenGLESTextureRef)sampleY sampleUV:(CVOpenGLESTextureRef)sampleUV width:(int)width heighe:(int)height {

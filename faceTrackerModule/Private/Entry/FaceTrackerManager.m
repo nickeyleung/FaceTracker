@@ -21,6 +21,8 @@ static id shared = nil;
 @property (nonatomic, strong) EAGLContext *context;
 @property (nonatomic, strong) FaceTrackerBridge *tracker;
 @property (nonatomic, strong) CAEAGLLayer *displayLayer;
+@property (nonatomic, strong) MLKFace *face;
+
 @end
 
 @implementation FaceTrackerManager
@@ -50,6 +52,10 @@ static id shared = nil;
 
 }
 
+- (void)updateStickerImagePath:(NSString *)path {
+    [self.tracker config2:path];
+}
+
 - (void)detectFace:(CAEAGLLayer *)displayLayer {
     
     self.displayLayer = displayLayer;
@@ -58,6 +64,7 @@ static id shared = nil;
         
         displayLayer.drawableProperties = @{kEAGLDrawablePropertyColorFormat: kEAGLColorFormatRGBA8};
         displayLayer.backgroundColor = [[UIColor lightGrayColor] CGColor];
+        [self.context renderbufferStorage:GL_RENDERBUFFER fromDrawable:self.displayLayer];
     }
 }
 
@@ -68,16 +75,8 @@ static id shared = nil;
     
     [FaceDetectBridge faceDetectWithSampleBuffer:sampleBuffer complete:^(NSArray<MLKFace *> * _Nonnull faces) {
         
-        MLKFace *face = faces.firstObject;
-        if (face != nil) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                CGFloat width = face.frame.size.width / 2;
-                CGFloat height = face.frame.size.height / 2;
-                CGFloat centerX = face.frame.origin.x / 2 + width / 2;
-                CGFloat centerY = face.frame.origin.y / 2 + height / 2;
-                [self.tracker updateSticker:centerX centerY:centerY width:width height:height];
-            });
-        }
+        self.face = faces.firstObject;
+
     }];
     
 
@@ -102,6 +101,16 @@ static id shared = nil;
         }
 
         [self.tracker display:sampleY sampleUV:sampleUV width:width heighe:height];
+        
+        if (self.face != nil) {
+            CGFloat width = self.face.frame.size.width / [[UIScreen mainScreen] scale] * 1.1;
+            CGFloat height = self.face.frame.size.height / [[UIScreen mainScreen] scale] * 1.2;
+            CGFloat centerX = self.face.frame.origin.x / [[UIScreen mainScreen] scale] + width / 2;
+            CGFloat centerY = self.face.frame.origin.y / [[UIScreen mainScreen] scale] + height / 2;
+            CGFloat x = ((centerX / self.displayLayer.frame.size.width) - 0.5 ) * 2;
+            CGFloat y = ((centerY / self.displayLayer.frame.size.height) - 0.5 ) * 2 - 0.2;
+            [self.tracker updateSticker:x centerY:-y width:width / self.displayLayer.frame.size.width height:height / self.displayLayer.frame.size.height rotateX:-self.face.headEulerAngleX rotateY:-self.face.headEulerAngleY rotateZ:-self.face.headEulerAngleZ];
+        }
         [self.context presentRenderbuffer:(NSUInteger)GL_RENDERBUFFER];
 
     }];

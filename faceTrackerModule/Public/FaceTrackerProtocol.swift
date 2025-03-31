@@ -7,9 +7,14 @@
 
 import UIKit
 
-@objc public protocol FaceTrackerProtocol {
+public enum ImagePath {
+    case rabbitSample
+    case imagePath(path: String)
+}
+
+public protocol FaceTrackerProtocol {
     
     var displayLayer: CAEAGLLayer? {get}
-    var effectImage: UIImage {get}
+    var effectImage: ImagePath {get}
     
 }

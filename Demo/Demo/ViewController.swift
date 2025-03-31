@@ -27,15 +27,18 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: FaceTrackerProtocol {
+    var effectImage: faceTrackerModule.ImagePath {
+        
+        if let path = Bundle.main.path(forResource: "item_stickerrabit", ofType: "png") {
+            return .imagePath(path: path)
+        }else {
+            return .rabbitSample
+        }
+    }
+    
     var displayLayer: CAEAGLLayer? {
         self.displayLa
     }
-    
-    var effectImage: UIImage {
-        UIImage(named: "")!
-    }
-    
-
 
 }
 

@@ -20,8 +20,9 @@ import AVFoundation
         
         let options = FaceDetectorOptions()
         options.performanceMode = .fast
-        options.contourMode = .all
+        options.contourMode = .none
         options.classificationMode = .none
+        options.landmarkMode = .none
         
         detector = FaceDetector.faceDetector(options: options)
     }
@@ -48,17 +49,21 @@ import AVFoundation
         if detector == nil {
             createDetector()
         }
-        
+            
         guard let detector = detector else { return }
-        
+    
         let visionImg = VisionImage(buffer: sampleBuffer)
         visionImg.orientation = imageOrientation(deviceOrientation: UIDeviceOrientation.landscapeRight, cameraPosition: cameraPosition)
+        
         do {
-          let result = try  detector.results(in: visionImg)
+            let result = try  detector.results(in: visionImg)
             complete(result)
+
         }catch {
             print(error)
         }
+
+
 
     }
 }

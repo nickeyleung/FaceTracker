@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name faceTrackerModule
 import AVFoundation
 import CoreMedia
@@ -18,9 +18,13 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol FaceTrackerProtocol {
-  @objc var displayLayer: QuartzCore.CAEAGLLayer? { get }
-  @objc var effectImage: UIKit.UIImage { get }
+public enum ImagePath {
+  case rabbitSample
+  case imagePath(path: Swift.String)
+}
+public protocol FaceTrackerProtocol {
+  var displayLayer: QuartzCore.CAEAGLLayer? { get }
+  var effectImage: faceTrackerModule.ImagePath { get }
 }
 @objc public protocol CaptureLogic {
   @objc func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
