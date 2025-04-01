@@ -6,7 +6,7 @@
 //
 
 #import "FaceDetectBridge.h"
-#import "Header.h"
+#import "faceTrackerModule-Swift.h"
 
 @implementation FaceDetectBridge
 

@@ -9,7 +9,7 @@
 #import <CoreMedia/CoreMedia.h>
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVCaptureDevice.h>
-#import "Header.h"
+#import "faceTrackerModule-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
