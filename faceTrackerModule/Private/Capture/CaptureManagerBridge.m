@@ -6,7 +6,7 @@
 //
 
 #import "CaptureManagerBridge.h"
-#import "faceTrackerModule-Swift.h"
+//#import "faceTrackerModule-Swift.h"
 
 @interface CaptureManagerBridge() <CaptureLogic>
 @property (nonatomic, strong) CaptureManager *capture;

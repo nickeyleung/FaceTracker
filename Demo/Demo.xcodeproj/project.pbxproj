@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6ED8592D9BBF79004E0F0A /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */; };
+		3D6ED85A2D9BBF79004E0F0A /* faceTrackerModule.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DA400A22D9A9000003764AD /* item_stickerrabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA400A12D9A9000003764AD /* item_stickerrabit.png */; };
 		3DA4FFD52D969A49003764AD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4FFD42D969A49003764AD /* libc++.tbd */; };
-		3DBF5BE92D9AE7AA00F1F56E /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF5BE72D9AE7A800F1F56E /* faceTrackerModule.framework */; };
-		3DBF5BEA2D9AE7AA00F1F56E /* faceTrackerModule.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DBF5BE72D9AE7A800F1F56E /* faceTrackerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DCA9E4F2D94196B00820FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA9E4E2D94196B00820FF7 /* AppDelegate.swift */; };
 		3DCA9E512D94196B00820FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA9E502D94196B00820FF7 /* SceneDelegate.swift */; };
 		3DCA9E532D94196B00820FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA9E522D94196B00820FF7 /* ViewController.swift */; };
@@ -27,16 +27,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3DBF5BEA2D9AE7AA00F1F56E /* faceTrackerModule.framework in CopyFiles */,
+				3D6ED85A2D9BBF79004E0F0A /* faceTrackerModule.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = faceTrackerModule.framework; sourceTree = "<group>"; };
 		3DA400A12D9A9000003764AD /* item_stickerrabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_stickerrabit.png; sourceTree = "<group>"; };
 		3DA4FFD42D969A49003764AD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		3DBF5BE72D9AE7A800F1F56E /* faceTrackerModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = faceTrackerModule.framework; sourceTree = "<group>"; };
 		3DCA9E4B2D94196B00820FF7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA9E4E2D94196B00820FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA9E502D94196B00820FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA4FFD52D969A49003764AD /* libc++.tbd in Frameworks */,
-				3DBF5BE92D9AE7AA00F1F56E /* faceTrackerModule.framework in Frameworks */,
+				3D6ED8592D9BBF79004E0F0A /* faceTrackerModule.framework in Frameworks */,
 				98D6C375CE28A98EB76CEB84 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,7 +111,7 @@
 				3DCA9E572D94196D00820FF7 /* Assets.xcassets */,
 				3DCA9E592D94196D00820FF7 /* LaunchScreen.storyboard */,
 				3DCA9E5C2D94196D00820FF7 /* Info.plist */,
-				3DBF5BE72D9AE7A800F1F56E /* faceTrackerModule.framework */,
+				3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */,
 			);
 			path = Demo;
 			sourceTree = "<group>";

@@ -94,8 +94,8 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "faceTrackerModule", "faceTrackerModule/**/*.{h,m}"
   spec.exclude_files = "faceTrackerModule/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+  #spec.public_header_files = "faceTrackerModule-Swift.h"
+  #spec.public_header_files = "faceTrackerModule/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
