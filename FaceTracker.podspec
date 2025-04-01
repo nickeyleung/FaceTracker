@@ -25,8 +25,9 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+    tracking face and add sticker image on it
                    DESC
-
+  spec.swift_versions = "5.0"
   spec.homepage     = "https://github.com/nickeyleung/FaceTracker"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/FaceTracker.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/nickeyleung/FaceTracker.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +92,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "faceTrackerModule", "faceTrackerModule/**/*.{h,m}"
+  spec.exclude_files = "faceTrackerModule/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -133,6 +134,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+   spec.dependency "GoogleMLKit/FaceDetection", "7.0.0"
 
 end
