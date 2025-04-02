@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Pods_faceTrackerModule.framework/Pods_faceTrackerModule</key>
 		<data>
-		cKD2OVuROYiyjD3EY+aDC8u9C1U=
+		P15H82xIiN/OcxbXivwFZWJFnsY=
 		</data>
 		<key>Frameworks/Pods_faceTrackerModule.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/faceTrackerModule.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		QEaIz7XDZzOHxSuPiLluZ//6sNA=
+		jT5PHr5HaGS/Lg4Mqpas0MgIbBI=
 		</data>
 		<key>Modules/faceTrackerModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1lU6I5w22XLKFgLyHxrHQ+MXUaE=
+		IWy6tDYLUyYrVScCufvEHo8kLWY=
 		</data>
 		<key>Modules/faceTrackerModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/faceTrackerModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QgBim0UH2Xur8oUX9Athhc8ZHSE=
+		BcqE9O1VtvPm/XWmwn1haoc/ado=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,11 +94,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cKD2OVuROYiyjD3EY+aDC8u9C1U=
+			P15H82xIiN/OcxbXivwFZWJFnsY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KNYdaC1RiNtxNSyLi5ISV/qLDhAWHfna61G4G9QEiL8=
+			/vX2s2JA3uJepqq6P5+Cs93aTM6gkUI7xpaFu2pLFWM=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_faceTrackerModule.framework/_CodeSignature/CodeResources</key>
@@ -127,22 +127,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QEaIz7XDZzOHxSuPiLluZ//6sNA=
+			jT5PHr5HaGS/Lg4Mqpas0MgIbBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5NonaHSVTGW3OLs1+phMViL2HDIuIhWTZitW6YSp7sU=
+			etmtJTFD1Eojfn5t3ZdHPlv2zfJnNd40JpqPSBQUNKw=
 			</data>
 		</dict>
 		<key>Modules/faceTrackerModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1lU6I5w22XLKFgLyHxrHQ+MXUaE=
+			IWy6tDYLUyYrVScCufvEHo8kLWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JQ1qT9AfPMRbM3WWrpso8858MdHnZQ0e2Y2zkDTys8E=
+			oGVBVXg4m66HCwqxuqS7O4yfogrAvmoxThg1BzPnHSw=
 			</data>
 		</dict>
 		<key>Modules/faceTrackerModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -182,11 +182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QgBim0UH2Xur8oUX9Athhc8ZHSE=
+			BcqE9O1VtvPm/XWmwn1haoc/ado=
 			</data>
 			<key>hash2</key>
 			<data>
-			HngqoLfMJCt8CJpbk8CikbFUtSzl/XabkikxfXSyHT0=
+			xQC41FwJShdp48g0fEuBpNNERCcc7EWD48oJbcITDrc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

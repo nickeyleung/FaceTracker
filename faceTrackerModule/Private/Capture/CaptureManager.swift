@@ -18,7 +18,7 @@ import AVFoundation
     private var back: AVCaptureDevice?
     private var front: AVCaptureDevice?
     private var current: AVCaptureDevice?
-    var delegate: CaptureLogic?
+    private var delegate: CaptureLogic?
     private var output: AVCaptureOutput?
     
     @objc public init(delegate: CaptureLogic, formatType: OSType, displayView: UIView?, orientation: AVCaptureVideoOrientation = .portrait) {

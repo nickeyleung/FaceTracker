@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0F2F482D9C3F4E005B2101 /* FaceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F2F472D9C3F4E005B2101 /* FaceTracker.swift */; };
 		3D6F01E52D905B5F006E824E /* faceTrackerModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01E42D905B5F006E824E /* faceTrackerModule.docc */; };
 		3D6F01EB2D905B5F006E824E /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */; };
 		3D6F01F02D905B5F006E824E /* faceTrackerModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01EF2D905B5F006E824E /* faceTrackerModuleTests.swift */; };
 		3D6F01F12D905B5F006E824E /* faceTrackerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F01E32D905B5F006E824E /* faceTrackerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6F02002D906085006E824E /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FC2D906085006E824E /* CaptureManager.swift */; };
-		3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */; };
-		3D6F02022D906085006E824E /* CaptureManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */; };
 		3D6F021C2D906200006E824E /* CCGLTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02072D906200006E824E /* CCGLTexture.cpp */; };
 		3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6F02082D906200006E824E /* CCGLTexture.h */; };
 		3D6F021E2D906200006E824E /* CCImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F02092D906200006E824E /* CCImage.cpp */; };
@@ -67,14 +66,13 @@
 		07F53E546306F2D9AFB191CE /* Pods_faceTrackerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceTrackerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D23F7F528DBA402B38CA4E /* Pods_faceTrackerModule_faceTrackerModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceTrackerModule_faceTrackerModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB276D476827EFF4D40A3A /* Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-faceTrackerModule-faceTrackerModuleTests/Pods-faceTrackerModule-faceTrackerModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D0F2F472D9C3F4E005B2101 /* FaceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTracker.swift; sourceTree = "<group>"; };
 		3D6F01E02D905B5F006E824E /* faceTrackerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = faceTrackerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F01E32D905B5F006E824E /* faceTrackerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = faceTrackerModule.h; sourceTree = "<group>"; };
 		3D6F01E42D905B5F006E824E /* faceTrackerModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = faceTrackerModule.docc; sourceTree = "<group>"; };
 		3D6F01EA2D905B5F006E824E /* faceTrackerModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faceTrackerModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F01EF2D905B5F006E824E /* faceTrackerModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faceTrackerModuleTests.swift; sourceTree = "<group>"; };
 		3D6F01FC2D906085006E824E /* CaptureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
-		3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManagerBridge.h; sourceTree = "<group>"; };
-		3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManagerBridge.m; sourceTree = "<group>"; };
 		3D6F02072D906200006E824E /* CCGLTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCGLTexture.cpp; sourceTree = "<group>"; };
 		3D6F02082D906200006E824E /* CCGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLTexture.h; sourceTree = "<group>"; };
 		3D6F02092D906200006E824E /* CCImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCImage.cpp; sourceTree = "<group>"; };
@@ -189,8 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				3D6F01FC2D906085006E824E /* CaptureManager.swift */,
-				3D6F01FD2D906085006E824E /* CaptureManagerBridge.h */,
-				3D6F01FE2D906085006E824E /* CaptureManagerBridge.m */,
 			);
 			path = Capture;
 			sourceTree = "<group>";
@@ -235,6 +231,7 @@
 			children = (
 				3D7316602D91BB1A008AD838 /* module.modulemap */,
 				3D7316612D91BE65008AD838 /* headers.h */,
+				3D0F2F472D9C3F4E005B2101 /* FaceTracker.swift */,
 				3DB606B02D91603000DD99A1 /* FaceTrackerManager.h */,
 				3DB606B12D91603000DD99A1 /* FaceTrackerManager.m */,
 				3D7316532D91A9B8008AD838 /* FaceTrackerBridge.h */,
@@ -276,7 +273,6 @@
 				3D6F02262D906200006E824E /* GLSticker.hpp in Headers */,
 				3DB606B32D91603000DD99A1 /* FaceTrackerManager.h in Headers */,
 				3D6F021D2D906200006E824E /* CCGLTexture.h in Headers */,
-				3D6F02012D906085006E824E /* CaptureManagerBridge.h in Headers */,
 				3D7316562D91A9B8008AD838 /* FaceTrackerBridge.h in Headers */,
 				3D6F02282D906200006E824E /* GLYUV.hpp in Headers */,
 				3D6F01F12D905B5F006E824E /* faceTrackerModule.h in Headers */,
@@ -489,11 +485,11 @@
 			files = (
 				3DB606AE2D915CD800DD99A1 /* FaceTrackerConfigurator.swift in Sources */,
 				3D73165B2D91AF4A008AD838 /* FaceDetectBridge.m in Sources */,
+				3D0F2F482D9C3F4E005B2101 /* FaceTracker.swift in Sources */,
 				3DB606AC2D915C3900DD99A1 /* FaceTrackerProtocol.swift in Sources */,
 				3D7316552D91A9B8008AD838 /* FaceTrackerBridge.mm in Sources */,
 				3D6F02252D906200006E824E /* GLSticker.cpp in Sources */,
 				3DB606B22D91603000DD99A1 /* FaceTrackerManager.m in Sources */,
-				3D6F02022D906085006E824E /* CaptureManagerBridge.m in Sources */,
 				3D6F02002D906085006E824E /* CaptureManager.swift in Sources */,
 				3D6F021E2D906200006E824E /* CCImage.cpp in Sources */,
 				3D6F021C2D906200006E824E /* CCGLTexture.cpp in Sources */,

@@ -15,5 +15,7 @@
     [FaceDetecteManager detectFaceWithSampleBuffer:sample cameraPosition:AVCaptureDevicePositionFront complete:^(NSArray<MLKFace *> * _Nonnull faces) {
             complete(faces);
         }];
+    
+    
 }
 @end

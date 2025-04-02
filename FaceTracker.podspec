@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/nickeyleung/FaceTracker.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/nickeyleung/FaceTracker.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "faceTrackerModule", "faceTrackerModule/**/*.{h,m}"
-  spec.exclude_files = "faceTrackerModule/Exclude"
+  #spec.exclude_files = "faceTrackerModule/Exclude"
   #spec.public_header_files = "faceTrackerModule-Swift.h"
   #spec.public_header_files = "faceTrackerModule/**/*.h"
 

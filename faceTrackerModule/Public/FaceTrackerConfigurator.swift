@@ -6,16 +6,14 @@
 //
 
 import UIKit
-import MyObjcFramework
 
 public class FaceTrackerConfigurator: NSObject {
     
-    private static var manager: FaceTrackerManager?
+    private static var manager: FaceTracker = FaceTracker()
     
     public class func detectFace(request: FaceTrackerProtocol) {
         
-        guard let manager = FaceTrackerManager.shared() as? FaceTrackerManager, let layer = request.displayLayer else { return }
-        self.manager = manager
+        guard let layer = request.displayLayer else { return }
         var path = ""
         
         switch request.effectImage {
@@ -24,7 +22,8 @@ public class FaceTrackerConfigurator: NSObject {
         case .imagePath(let ipath):
             path = ipath
         }
-        manager.updateStickerImagePath(path)
-        manager.detectFace(layer)
+        manager.updateStickerImagePath(path: path)
+        manager.detectFace(layer: layer)
+        manager.startCapture()
     }
 }

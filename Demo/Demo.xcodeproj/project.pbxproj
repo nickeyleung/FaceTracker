@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D6ED8592D9BBF79004E0F0A /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */; };
-		3D6ED85A2D9BBF79004E0F0A /* faceTrackerModule.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DA400A22D9A9000003764AD /* item_stickerrabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA400A12D9A9000003764AD /* item_stickerrabit.png */; };
 		3DA4FFD52D969A49003764AD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4FFD42D969A49003764AD /* libc++.tbd */; };
 		3DCA9E4F2D94196B00820FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA9E4E2D94196B00820FF7 /* AppDelegate.swift */; };
@@ -17,6 +15,8 @@
 		3DCA9E562D94196B00820FF7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA9E552D94196B00820FF7 /* Base */; };
 		3DCA9E582D94196D00820FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA9E572D94196D00820FF7 /* Assets.xcassets */; };
 		3DCA9E5B2D94196D00820FF7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA9E5A2D94196D00820FF7 /* Base */; };
+		3DEFA9302D9D945F00C78A2D /* faceTrackerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEFA92E2D9D945B00C78A2D /* faceTrackerModule.framework */; };
+		3DEFA9312D9D945F00C78A2D /* faceTrackerModule.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DEFA92E2D9D945B00C78A2D /* faceTrackerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98D6C375CE28A98EB76CEB84 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA677D66888BA5625D57C7C0 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +27,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D6ED85A2D9BBF79004E0F0A /* faceTrackerModule.framework in CopyFiles */,
+				3DEFA9312D9D945F00C78A2D /* faceTrackerModule.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = faceTrackerModule.framework; sourceTree = "<group>"; };
 		3DA400A12D9A9000003764AD /* item_stickerrabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_stickerrabit.png; sourceTree = "<group>"; };
 		3DA4FFD42D969A49003764AD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		3DCA9E4B2D94196B00820FF7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +44,7 @@
 		3DCA9E572D94196D00820FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCA9E5A2D94196D00820FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCA9E5C2D94196D00820FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEFA92E2D9D945B00C78A2D /* faceTrackerModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = faceTrackerModule.framework; sourceTree = "<group>"; };
 		4E32E03665679291A09395BD /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5E45FE35A394952763634633 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		AA677D66888BA5625D57C7C0 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA4FFD52D969A49003764AD /* libc++.tbd in Frameworks */,
-				3D6ED8592D9BBF79004E0F0A /* faceTrackerModule.framework in Frameworks */,
+				3DEFA9302D9D945F00C78A2D /* faceTrackerModule.framework in Frameworks */,
 				98D6C375CE28A98EB76CEB84 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,7 +111,7 @@
 				3DCA9E572D94196D00820FF7 /* Assets.xcassets */,
 				3DCA9E592D94196D00820FF7 /* LaunchScreen.storyboard */,
 				3DCA9E5C2D94196D00820FF7 /* Info.plist */,
-				3D6ED8572D9BBF74004E0F0A /* faceTrackerModule.framework */,
+				3DEFA92E2D9D945B00C78A2D /* faceTrackerModule.framework */,
 			);
 			path = Demo;
 			sourceTree = "<group>";

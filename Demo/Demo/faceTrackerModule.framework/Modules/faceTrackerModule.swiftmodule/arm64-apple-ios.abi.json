@@ -15,13 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "MyObjcFramework",
-        "printedName": "MyObjcFramework",
-        "declKind": "Import",
-        "moduleName": "faceTrackerModule"
-      },
-      {
         "kind": "TypeDecl",
         "name": "FaceTrackerConfigurator",
         "printedName": "FaceTrackerConfigurator",
@@ -144,6 +137,30 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
+      },
+      {
+        "kind": "Import",
+        "name": "MyObjcFramework",
+        "printedName": "MyObjcFramework",
+        "declKind": "Import",
+        "moduleName": "faceTrackerModule"
       },
       {
         "kind": "Import",

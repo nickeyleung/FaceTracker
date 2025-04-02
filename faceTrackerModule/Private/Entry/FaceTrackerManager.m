@@ -10,19 +10,17 @@
 #import <OpenGLES/EAGL.h>
 #import <OpenGLES/ES3/gl.h>
 #import <OpenGLES/ES3/glext.h>
-#import "CaptureManagerBridge.h"
 #import "FaceDetectBridge.h"
-#import <GoogleMLKit/MLKit.h>
+#import <UIKit/UIKit.h>
 
 static id shared = nil;
 
-@interface FaceTrackerManager() <CaptureOutputLogic>
-@property (nonatomic, strong) CaptureManagerBridge *capture;
+@interface FaceTrackerManager()
 @property (nonatomic, strong) EAGLContext *context;
 @property (nonatomic, strong) FaceTrackerBridge *tracker;
 @property (nonatomic, strong) CAEAGLLayer *displayLayer;
 @property (nonatomic, strong) MLKFace *face;
-
+@property (nonatomic, assign) CVPixelBufferRef imageBuffer;
 @end
 
 @implementation FaceTrackerManager
@@ -41,12 +39,6 @@ static id shared = nil;
     
     self.context = [[EAGLContext alloc] initWithAPI:(kEAGLRenderingAPIOpenGLES3)];
     [EAGLContext setCurrentContext:_context];
-
-    _capture = [[CaptureManagerBridge alloc] init];
-    [_capture setup:nil];
-    _capture.delegate = self;
-    
-    [_capture startCapture];
     
     self.tracker = [FaceTrackerBridge shared];
 
@@ -68,18 +60,39 @@ static id shared = nil;
     }
 }
 
+-(void)updateFace:(MLKFace *)face {
+    self.face = face;
+}
+
 - (void)captureOutput:(AVCaptureOutput *)output didOutput:(CMSampleBufferRef)sampleBuffer from:(AVCaptureConnection *)connection {
         
     
     [self displaySampleBuffer:sampleBuffer];
     
-    [FaceDetectBridge faceDetectWithSampleBuffer:sampleBuffer complete:^(NSArray<MLKFace *> * _Nonnull faces) {
-        
-        self.face = faces.firstObject;
+}
 
-    }];
+-(void)createSamples:(EAGLContext *)context imageBuffer:(CVPixelBufferRef)imageBuffer complate:(void(^)(CVOpenGLESTextureRef, CVOpenGLESTextureRef))complate {
     
+    size_t pixelWidth = CVPixelBufferGetWidth(imageBuffer);
+    size_t pixelHeight = CVPixelBufferGetHeight(imageBuffer);
 
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CVOpenGLESTextureCacheRef cache;
+        
+        CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, nil, context, nil, &cache);
+        
+        if (cache != nil) {
+            CVOpenGLESTextureRef sampleY;
+            CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, cache, imageBuffer, nil, GL_TEXTURE_2D, GL_LUMINANCE, pixelWidth, pixelHeight, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0, &sampleY);
+            
+            CVOpenGLESTextureRef sampleUV;
+            CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, cache, imageBuffer, nil, GL_TEXTURE_2D, GL_LUMINANCE_ALPHA, pixelWidth / 2, pixelHeight / 2, GL_LUMINANCE_ALPHA, GL_UNSIGNED_BYTE, 1, &sampleUV);
+            
+            if (sampleY != nil && sampleUV != nil) {
+                complate(sampleY, sampleUV);
+            }
+        }
+    });
 }
 
 - (void)displaySampleBuffer:(CMSampleBufferRef)sampleBuffer {
@@ -90,31 +103,62 @@ static id shared = nil;
         return;
     }
     
-    [self.capture createSamples:self.context imageBuffer:imageBuffer complete:^(CVOpenGLESTextureRef _Nonnull sampleY, CVOpenGLESTextureRef _Nonnull sampleUV) {
+    size_t pixelWidth = CVPixelBufferGetWidth(imageBuffer);
+    size_t pixelHeight = CVPixelBufferGetHeight(imageBuffer);
+
+        CVOpenGLESTextureCacheRef cache;
         
-        int width = 0;
-        int height = 0;
+        CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, nil, self.context, nil, &cache);
         
-        if (self.displayLayer != nil) {
-            width = self.displayLayer.frame.size.width;
-            height = self.displayLayer.frame.size.height;
+        if (cache != nil) {
+            CVOpenGLESTextureRef sampleY;
+            CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, cache, imageBuffer, nil, GL_TEXTURE_2D, GL_LUMINANCE, pixelWidth, pixelHeight, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0, &sampleY);
+            
+            CVOpenGLESTextureRef sampleUV;
+            CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, cache, imageBuffer, nil, GL_TEXTURE_2D, GL_LUMINANCE_ALPHA, pixelWidth / 2, pixelHeight / 2, GL_LUMINANCE_ALPHA, GL_UNSIGNED_BYTE, 1, &sampleUV);
+            
+
+            
+            if (sampleY != nil && sampleUV != nil) {
+                
+                int width = 0;
+                int height = 0;
+                
+                if (self.displayLayer != nil) {
+                    width = self.displayLayer.frame.size.width;
+                    height = self.displayLayer.frame.size.height;
+                }
+                
+                    [self.tracker display:sampleY sampleUV:sampleUV width:width heighe:height];
+
+                
+                if (self.face != nil) {
+                    CGFloat width = self.face.frame.size.width / [[UIScreen mainScreen] scale] * 1.1;
+                    CGFloat height = self.face.frame.size.height / [[UIScreen mainScreen] scale] * 1.2;
+                    CGFloat centerX = self.face.frame.origin.x / [[UIScreen mainScreen] scale] + width / 2;
+                    CGFloat centerY = self.face.frame.origin.y / [[UIScreen mainScreen] scale] + height / 2;
+                    CGFloat x = ((centerX / self.displayLayer.frame.size.width) - 0.5 ) * 2;
+                    CGFloat y = ((centerY / self.displayLayer.frame.size.height) - 0.5 ) * 2 - 0.2;
+                    [self.tracker updateSticker:x centerY:-y width:width / self.displayLayer.frame.size.width height:height / self.displayLayer.frame.size.height rotateX:-self.face.headEulerAngleX rotateY:-self.face.headEulerAngleY rotateZ:-self.face.headEulerAngleZ];
+                }
+                [self.context presentRenderbuffer:(NSUInteger)GL_RENDERBUFFER];
+
+
+            }
+            
+            CVOpenGLESTextureCacheFlush(cache, 0);
+            
+//            glDeleteTextures(1, &sampleY);
+//            glDeleteTextures(1, &sampleUV);
+            CFRelease(sampleY);
+            CFRelease(sampleUV);
+            CFRelease(cache);
+
+            sampleY = nil;
+            sampleUV = nil;
+            cache = nil;
+
         }
-
-        [self.tracker display:sampleY sampleUV:sampleUV width:width heighe:height];
-        
-        if (self.face != nil) {
-            CGFloat width = self.face.frame.size.width / [[UIScreen mainScreen] scale] * 1.1;
-            CGFloat height = self.face.frame.size.height / [[UIScreen mainScreen] scale] * 1.2;
-            CGFloat centerX = self.face.frame.origin.x / [[UIScreen mainScreen] scale] + width / 2;
-            CGFloat centerY = self.face.frame.origin.y / [[UIScreen mainScreen] scale] + height / 2;
-            CGFloat x = ((centerX / self.displayLayer.frame.size.width) - 0.5 ) * 2;
-            CGFloat y = ((centerY / self.displayLayer.frame.size.height) - 0.5 ) * 2 - 0.2;
-            [self.tracker updateSticker:x centerY:-y width:width / self.displayLayer.frame.size.width height:height / self.displayLayer.frame.size.height rotateX:-self.face.headEulerAngleX rotateY:-self.face.headEulerAngleY rotateZ:-self.face.headEulerAngleZ];
-        }
-        [self.context presentRenderbuffer:(NSUInteger)GL_RENDERBUFFER];
-
-    }];
-
     
 }
 
